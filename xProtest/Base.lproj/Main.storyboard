@@ -120,7 +120,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="zKQ-WN-KUj">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="bTY-Pa-fGo"/>
+                        <barButtonItem key="rightBarButtonItem" title="New" id="bTY-Pa-fGo">
+                            <connections>
+                                <segue destination="Lhq-vG-xa8" kind="show" id="gni-n9-hGZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hA9-zA-eKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,23 +200,23 @@
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="Ur0-UF-nWq" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f5v-MC-emF">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Name" id="Rit-pc-Viv">
-                                <rect key="frame" x="0.0" y="28" width="1024" height="51.5"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rit-pc-Viv" id="xA2-Hg-8xN">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="yeet" id="95H-kn-QXT">
-                                <rect key="frame" x="0.0" y="79.5" width="1024" height="51.5"/>
+                                <rect key="frame" x="0.0" y="79.5" width="375" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="95H-kn-QXT" id="v1A-tJ-0wk">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -228,17 +232,24 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdG-hg-5Fo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4177" y="-981"/>
+            <point key="canvasLocation" x="4925" y="-560"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="NYc-8X-bmb">
+        <!--Navigation Controller-->
+        <scene sceneID="B6h-gE-dqR">
             <objects>
-                <splitViewController id="Yfg-K6-TXf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sCk-xn-NBB"/>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffs-Jy-sI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="Lhq-vG-xa8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kkn-w3-TYK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tEq-jS-5hJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ur0-UF-nWq" kind="relationship" relationship="rootViewController" id="Do3-bl-fcU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YS7-Ed-c8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5132" y="-981"/>
+            <point key="canvasLocation" x="4353" y="-1377"/>
         </scene>
     </scenes>
     <resources>

@@ -51,6 +51,7 @@
 		337040AA24912A8D002AB28F /* xProtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xProtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		337040AE24912A8D002AB28F /* xProtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xProtestUITests.swift; sourceTree = "<group>"; };
 		337040B024912A8D002AB28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339DF3B12493C38B0064C01F /* xProtest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xProtest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		3370408924912A83002AB28F /* xProtest */ = {
 			isa = PBXGroup;
 			children = (
+				339DF3B12493C38B0064C01F /* xProtest.entitlements */,
 				3370408A24912A83002AB28F /* AppDelegate.swift */,
 				3370408C24912A83002AB28F /* SceneDelegate.swift */,
 				3370408E24912A83002AB28F /* FirstViewController.swift */,
@@ -438,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xProtest/xProtest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y34FHV8S2;
 				INFOPLIST_FILE = xProtest/Info.plist;
@@ -447,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = brownloweFoundation.xProtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xProtest/xProtest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y34FHV8S2;
 				INFOPLIST_FILE = xProtest/Info.plist;
@@ -465,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = brownloweFoundation.xProtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +482,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y34FHV8S2;
 				INFOPLIST_FILE = xProtestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,6 +504,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y34FHV8S2;
 				INFOPLIST_FILE = xProtestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +525,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y34FHV8S2;
 				INFOPLIST_FILE = xProtestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +545,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y34FHV8S2;
 				INFOPLIST_FILE = xProtestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
